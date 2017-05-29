@@ -13,7 +13,7 @@ class Team
     players.push(new_player)
   end
 
-  # def player_here(name)
+  # def find_player(name)
   #   if @players.include?(name)
   #     return true
   #   else
@@ -22,13 +22,11 @@ class Team
   #   end
   # end
 
-  # def player_here(name)
-  #   for footballer in name
-  #     if footballer == name
-  #       return footballer
-  #     end
-  #   end
-  # end
+  def find_player(name)
+    for footballer in @players
+      return footballer if @players.include?(name)
+    end
+  end
 
   def change_points(result)
     if result == "win"
