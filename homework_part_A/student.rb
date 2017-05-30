@@ -6,7 +6,17 @@ class Student
     @cohort = cohort
   end
 
+  def student_name
+    return name
+  end
 
+  def student_cohort
+    return cohort
+  end
+
+
+# def student_speak(words)
+#   return words
   def speak()
     return "I can talk!"
   end

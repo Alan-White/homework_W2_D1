@@ -7,18 +7,23 @@ class TestStudent < MiniTest::Test
   end
 
   def test_student_name
+    @student.name
     assert_equal("Alan", @student.name)
   end
 
   def test_student_cohort
+    @student.cohort
     assert_equal(13, @student.cohort)
   end
-
+# WHY DOESN'T THE COMMENTED OUT METHOD BELOW WORK ????
   def test_student_speak
+    # @student.student_speak("I can talk!")
+    # assert_equal("I can talk!", @student.student_speak("I can talk!"))
     assert_equal("I can talk!", @student.speak)
   end
 
   def test_language
+    @student.language("Ruby")
     assert_equal("I love Ruby", @student.language("Ruby"))
   end
 
