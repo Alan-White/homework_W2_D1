@@ -12,7 +12,7 @@ class Team
   def add_player(new_player)
     players.push(new_player)
   end
-
+# The method below also works
   # def find_player(name)
   #   if @players.include?(name)
   #     return true
